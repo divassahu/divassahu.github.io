@@ -1,7 +1,44 @@
-body{
+@media screen and (min-width: 480px) {
+  #top {
     background-color: aqua;
-}
-#navbar{
+    height: 900px;
+  }
+  #mid {
+    background-color: rgb(236, 241, 236);
+    height: 800px;
+  }
+  #bottom {
+    background-color: aquamarine;
+    height: 900px;
+    border: 1px solid teal;
+  }
+  #navbar {
+    content: icon;
     width: 100px;
+    display: flex;
+    gap: 70%;
     background-color: blueviolet;
+  }
+}
+@media screen and (min-width: 720px) {
+  #top {
+    background-color: aqua;
+    height: 900px;
+  }
+  #mid {
+    background-color: rgb(236, 241, 236);
+    height: 800px;
+  }
+  #bottom {
+    background-color: aquamarine;
+    height: 900px;
+    border: 1px solid teal;
+  }
+  #navbar {
+    content: icon;
+    width: 100px;
+    display: flex;
+    gap: 70%;
+    background-color: blueviolet;
+  }
 }
