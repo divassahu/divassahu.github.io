@@ -16,7 +16,7 @@
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
+  /*===== Margines =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
@@ -337,6 +337,24 @@ img {
 
 .skills__img {
   border-radius: .5rem;
+}
+#techStackimg1{
+  width: 50%;
+  height: 50%;
+}
+#techStackimg2{
+  width: 50%;
+  height: 50%;
+}
+#techStackimg3{
+  width: 100px;
+  height: 100px ;
+}
+#techStackimg{
+  /* margin-left: 10%; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 5%;
 }
 
 /* ===== WORK =====*/
