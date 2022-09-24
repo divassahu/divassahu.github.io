@@ -298,10 +298,10 @@ home__.social-icons a.twitter:hover {
   font-size: 1.5rem;
   color: var(--second-color);
 }
-
+*/
 .home__social-icon:hover {
   color: var(--first-color);
-} */
+} 
 
 .home__img {
   position: absolute;
@@ -429,6 +429,9 @@ home__.social-icons a.twitter:hover {
 .skills__img {
   border-radius: .5rem;
 }
+#techStackimg :hover{
+  transition: .5;
+}
 #techStackimg1{
   width: 50%;
   height: 50%;
@@ -462,6 +465,10 @@ home__.social-icons a.twitter:hover {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   overflow: hidden;
+}
+
+#zee{
+  height: 44%;
 }
 
 .work__img img {
