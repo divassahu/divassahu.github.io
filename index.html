@@ -3,20 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio | Divas Sahu</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("JkdDZvVePORqh7IMV");
+        })();
+        </script>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Divas Sahu</a>
+                <div class = "circle">
+                    <span>DS </span><a href="#home" class="nav__logo"> Divas Sahu</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -25,6 +34,7 @@
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#git" class="nav__link">GitHub</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -38,19 +48,27 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
+                <div id="particles-js"></div>
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Divas Sahu</span><br> Backend Developer</h1>
-
-                    <a href="#" class="button">Contact</a>
+                    <h1 class="home__title mb-0">Hi,<br>I'm <span class="home__title-color">Divas Sahu</span><br> Backend Developer</h1>
+                    <p>I am into <span class="typing-text"></span></p>
+                    <a href="#contact" class="button">Contact</a>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/divas-kumar-sahu-b0180668/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <div class="home__socials">
+                    <ul class="home__social-icons">
+                      <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/divas-kumar-sahu-b0180668/" target="_blank"><i class='bx bxl-linkedin'></i></a></li> 
+                      <li><a class="github" aria-label="GitHub" href="https://github.com/divassahu" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                      <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/divassahu" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+          
+                    </ul>
+                </div>
+                <!-- <div class="home__socials">
+                    <a href="https://www.linkedin.com/in/divas-kumar-sahu-b0180668/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a> -->
                     <!-- <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                    <a href="https://github.com/divassahu" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+                    <!-- <a href="https://github.com/divassahu" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div> -->
 
-                <div class="home__img">
+                <!-- <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <mask id="mask0" mask-type="alpha">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
@@ -60,30 +78,30 @@
                             <image class="home__blob-img" x="50" y="60" href="divaspp.img-removebg-preview.png"/>
                         </g>
                     </svg>
-                </div>
+                </div> -->
             </section>
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title"><i class="bx bx-user"></i>About<span> Me</span></h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="divaspp.img.jpg" alt="">
+                        <img src="divas.jpeg" alt="">
                     </div>
                     
                     <div>
                         <h2 class="about__subtitle">I'am Divas Sahu</h2>
                         <p class="about__text">Enthusiastic and reliable Java Developer with a strong JavaScript knowledge base, passionate about improving my coding skills & developing web applications.</p>
                         <br>           
-                        <a href="" class="button" onclick="window.open('https://drive.google.com/file/d/1cLSbShEwJ2IeB4hYob7bZyg-m-2MqPjo/view?usp=sharing')">Resume</a>
+                        <a href="Divas_Sahu_Resume.pdf" target="_blank" class="button" download="fullstackdeveloper_resume">Resume</a>
                     </div>                                   
                 </div>
             </section>
 
              <!-- ===== SKILLS ===== -->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Tech Stack</h2>
+                <h2 class="section-title"><i class="bx bxl-laptop-code"></i>Tech <span>Stack</span></h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
@@ -156,18 +174,18 @@
                         <br>             
                         <!-- <img src="assets/img/work3.jpg" alt="" class="skills__img"> -->
                         <div id="techStackimg">
-                            <img src="/portImg/java_Logo.png" alt="">
-                            <img src="/portImg/sprngboot_logo.png" alt="">
-                            <img src="/portImg/hibernate+logo.png" alt="">
-                            <img src="/portImg/sql_logo.png" alt="">
-                            <img src="/portImg/aws.jpg" alt="">
-                            <img src="/portImg/cloudcom[.png" alt="">
-                            <img src="/portImg/js_logo.png" alt="">
-                            <img src="/portImg/html_logo.png" alt="">
-                            <img src="/portImg/css_logo.png" alt="">
-                            <img src="/portImg/postman.png" alt="">
-                            <img src="/portImg/dsaLogo.png" alt="">
-                            <img src="/portImg/maven_logo.jfif" alt="">
+                            <img src="./portImg/java_Logo.png" alt="">
+                            <img src="./portImg/sprngboot_logo.png" alt="">
+                            <img src="./portImg/hibernate+logo.png" alt="">
+                            <img src="./portImg/sql_logo.png" alt="">
+                            <img src="./portImg/aws.jpg" alt="">
+                            <img src="./portImg/cloudcom[.png" alt="">
+                            <img src="./portImg/js_logo.png" alt="">
+                            <img src="./portImg/html_logo.png" alt="">
+                            <img src="./portImg/css_logo.png" alt="">
+                            <img src="./portImg/postman.png" alt="">
+                            <img src="./portImg/dsaLogo.png" alt="">
+                            <img src="./portImg/maven_logo.jfif" alt="">
                         </div>
                     </div>
 
@@ -177,51 +195,128 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title"><i class="bx bx-laptop-code"></i>Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="/projectImg/memory.png" alt="" onclick="window.open('https://fantastic-queijadas-e98c0f.netlify.app/')">
+                    <div class="work__img">
+                        <a href="" alt="view" class="work__img">
+                            <img src="./projectImg/memory.png" class="work__img"  alt="view" onclick="window.open('https://fantastic-queijadas-e98c0f.netlify.app/')">
+                        </a>
+                        <div class="content">
+                            <div class="tag">
+                            <h3>Timely time tracking software</h3>
+                            </div>
+                            <div class="desc">
+                              <p>Timely automates company time tracking, so you and your team can focus on the work that matters.</p>
+                              <div class="btns">
+                                <a href="https://github.com/nileshs23/dear-shade-414" class="btn" target="_blank">Code</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work__img">
+                        <a href="" class="work__img">
+                            <img src="./projectImg/myntra.png" class="work__img" alt="view" onclick="window.open('https://scintillating-jelly-fdc7ef.netlify.app/')">
+                        </a>
+                        <div class="content">
+                            <div class="tag">
+                            <h3>Myntra Clone</h3>
+                            </div>
+                            <div class="desc">
+                              <p>Clone of Myntra.com, which is a popular E-Commerce website, where anyone can visit and buy item.</p>
+                              <div class="btns">
+                                <a href="https://github.com/Priyanshu-Tyagi/Myntra_Clone" class="btn" target="_blank">Code </a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="work__img">
+                        <a href="">
+                            <img src="./projectImg/zee.png" class="work__img" alt="view" onclick="window.open('https://startling-beijinho-cb157a.netlify.app/')">
+                        </a>
+                        <div class="content">
+                            <div class="tag">
+                            <h3>Clone of the Zee5</h3>
+                            </div>
+                            <div class="desc">
+                              <p>Zee-5 is an Over The Top Website with 90+ live TV channels across the multiple languages.</p>
+                              <div class="btns">
+                                <a href="https://github.com/hridayjha/Zee5-constructWeekProject" class="btn" target="_blank">Code </a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <a href="" class="work__img">
+                        <img src="./projectImg/memory.png" class="work__img" alt="" onclick="window.open('https://fantastic-queijadas-e98c0f.netlify.app/')">
                     </a>
                     <a href="" class="work__img"  onclick="window.open('https://scintillating-jelly-fdc7ef.netlify.app/')">
-                        <img src="/projectImg/myntra.png" alt="">
+                        <img src="./projectImg/myntra.png" alt="">
                     </a>
                     <a href="" class="work__img" onclick="window.open('https://startling-beijinho-cb157a.netlify.app/')">
-                        <img src="/projectImg/zee.png" alt="">
-                    </a>
+                        <img src="./projectImg/zee.png" alt="">
+                    </a> -->
                    
+                </div>
+            </section>
+
+            <!--===== Git =====-->
+            <section class="git section" id="git">
+                <h2 class="section-title">Git <span> Contributions</span></h2>
+                <div class="contact__container bd-grid">
+                    <a href="">
+                        <img src="./projectImg/github.png" alt="Github Contributions"  onclick="window.open('https://github.com/divassahu')">
+                    </a>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
+         
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send Message" class="contact__button button">
+                    
+                    <form action="javascript:sendmail()" method="post" class="contact__form" required>
+                        <input type="text" placeholder="Name"  id="name" class="contact__input" required>
+                        <input type="mail" placeholder="Email"  id="email" class="contact__input" required>
+                        <input type="number" placeholder="Phone"  id="phone" class="contact__input" required>
+                        <textarea name="" placeholder="Message" id ="message" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="button" onclick="sendmail();" value="Send Message" class="contact__button button">
                     </form>
                 </div>
             </section>
         </main>
 
         <!--===== FOOTER =====-->
+        
         <footer class="footer">
             <p class="footer__title">Divas Sahu</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/divas-kumar-sahu-b0180668/"  target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/divassahu"  target="_blank"class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://twitter.com/divassahu"  target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p><br>
             <p class="footer__copy">&#169; Designed by Divas</p>
         </footer>
 
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== Jquery =====-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <!--===== SMTP =====-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <!-- typed.js cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+        <!-- particle.js links -->
+        <script src="./assets/js/particles.min.js"></script>
+        <script src="./assets/js/app.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>

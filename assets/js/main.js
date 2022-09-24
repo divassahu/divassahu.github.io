@@ -41,6 +41,51 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+//contact form  send mail
+function sendmail(){
+    
+    var params = {
+        name : $('#name').val(),
+        email : $('#email').val(),
+        subject :$('#phone').val(),
+        message :$('#message').val(),
+    }
+
+    const serviceID ='service_zlltyzd' ;
+    const templateID = 'template_0stzr67';
+    emailjs.send(serviceID, templateID , params,'JkdDZvVePORqh7IMV')
+        .then(function(res) {
+            console.log(res.text);
+            if(res.text=='OK'){
+                alert('Your mail has been sent. Thank you for connecting me.');
+                $('#name').val('');
+                $('#email').val('');
+                $('#phone').val('');$('#message').val('');
+            }
+            else{
+                console.error (message);
+                alert('There is error at sending message. ')
+                
+            }
+            
+        }, function(error) {
+            alert('There is error at sending message. ')
+        });
+
+}
+
+
+
+// <!-- typed js effect starts -->
+var typed = new Typed(".typing-text", {
+    strings: ["Frontend Development", "Backend Development", "Java development", "Web Development"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 500,
+});
+// <!-- typed js effect ends -->
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
