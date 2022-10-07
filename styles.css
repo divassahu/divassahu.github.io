@@ -536,7 +536,7 @@ home__.social-icons a.twitter:hover {
 
 /* ===== GIT =====*/
 .git .section-title span {
-  color: rgb(255, 230, 0);
+  color: rgb(107, 33, 142);
 }
 
 /* ===== CONTACT =====*/
@@ -718,4 +718,9 @@ home__.social-icons a.twitter:hover {
   .home__img {
     width: 450px;
   }
+}
+
+.calendar{
+  width: 90%;
+  background-color:#000031;
 }
