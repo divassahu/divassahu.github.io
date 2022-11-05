@@ -252,7 +252,7 @@ img {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
+  color: rgb(115, 3, 167);
   background-color: #09011b;
   width: 44px;
   height: 44px;
@@ -361,7 +361,7 @@ home__.social-icons a.twitter:hover {
 /* ===== SKILLS =====*/
 
 .skills .section-title  span {
-  color: rgb(255, 230, 0);
+  color: rgb(115, 3, 167);
 }
 
 .skills__container {
@@ -455,6 +455,7 @@ home__.social-icons a.twitter:hover {
 .work {
   /* background: #010124; */
   background: linear-gradient(to bottom, #000031, #00002c);
+  height: 190%;
 }
 .work__container {
   row-gap: 2rem;
@@ -468,7 +469,7 @@ home__.social-icons a.twitter:hover {
 }
 
 #zee{
-  height: 44%;
+  height: 40%;
 }
 
 .work__img img {
@@ -536,7 +537,7 @@ home__.social-icons a.twitter:hover {
 
 /* ===== GIT =====*/
 .git .section-title span {
-  color: rgb(107, 33, 142);
+  color: rgb(115, 3, 167);
 }
 
 /* ===== CONTACT =====*/
@@ -723,4 +724,21 @@ home__.social-icons a.twitter:hover {
 .calendar{
   width: 90%;
   background-color:#000031;
+}
+
+.streak{
+  margin-left: 25%;
+  margin-top: -5%;
+  margin-bottom: 5%;
+  width: 50%;
+
+}
+
+#techStackLogo{
+  display: flex;
+}
+
+.tslogo{
+  width: 30%;
+  height: 50%;
 }
