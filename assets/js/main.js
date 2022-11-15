@@ -82,7 +82,6 @@ var typed = new Typed(".typing-text", {
     "Frontend Development",
     "Backend Development",
     "Java development",
-    "Web Development",
   ],
   loop: true,
   typeSpeed: 50,
