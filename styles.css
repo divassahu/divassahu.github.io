@@ -466,6 +466,8 @@ home__.social-icons a.twitter:hover {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   overflow: hidden;
+  width: 100%;
+  height: 70;
 }
 
 #zee{
@@ -745,4 +747,11 @@ home__.social-icons a.twitter:hover {
 .tslogo{
   width: 30%;
   height: 50%;
+}
+
+#workImg_myntra{
+  height: 52%;
+}
+#work_img_timely{
+  height: 52%;
 }
