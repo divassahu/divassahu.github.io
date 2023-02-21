@@ -11,11 +11,11 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
   /*===== Margines =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -26,17 +26,29 @@
   --z-fixed: 100;
 }
 
+/* body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+canvas {
+  display: block;
+} */
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size: 0.875rem;
   }
 }
 
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -52,7 +64,9 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -84,7 +98,7 @@ img {
 
 .section-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 64px;
   height: 0.18rem;
   left: 0;
@@ -127,11 +141,10 @@ img {
   font-weight: var(--font-semi);
 }
 .nav .circle span {
-  
   border-radius: 50%;
   padding: 3px;
   background: rgb(30, 1, 67);
-  color:white;
+  color: white;
   text-align: center;
   margin: 10px;
 }
@@ -145,7 +158,7 @@ img {
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -164,7 +177,7 @@ img {
 
 .nav__link:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -185,7 +198,7 @@ img {
 /*Active menu*/
 .active::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 0.18rem;
   left: 0;
@@ -287,7 +300,6 @@ home__.social-icons a.twitter:hover {
 }
 /* social icons end */
 
-
 /* .home__social {
   display: flex;
   flex-direction: column;
@@ -302,7 +314,7 @@ home__.social-icons a.twitter:hover {
 */
 .home__social-icon:hover {
   color: var(--first-color);
-} 
+}
 
 .home__img {
   position: absolute;
@@ -325,10 +337,10 @@ home__.social-icons a.twitter:hover {
   /* margin: auto; */
   background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: .5rem;
-  transition: .3s;
+  border-radius: 0.5rem;
+  transition: 0.3s;
   /* border: 2px solid green;  */
 }
 
@@ -358,12 +370,12 @@ home__.social-icons a.twitter:hover {
 
 .about__img img {
   width: 200px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /* ===== SKILLS =====*/
 
-.skills .section-title  span {
+.skills .section-title span {
   color: rgb(115, 3, 167);
 }
 
@@ -386,9 +398,9 @@ home__.social-icons a.twitter:hover {
   align-items: center;
   position: relative;
   font-weight: var(--font-semi);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
@@ -408,8 +420,8 @@ home__.social-icons a.twitter:hover {
   left: 0;
   bottom: 0;
   background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
+  height: 0.25rem;
+  border-radius: 0.5rem;
   z-index: var(--z-back);
 }
 
@@ -430,27 +442,27 @@ home__.social-icons a.twitter:hover {
 }
 
 .skills__img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-#techStackimg :hover{
-  transition: .5;
+#techStackimg :hover {
+  transition: 0.5;
 }
-#techStackimg1{
+#techStackimg1 {
   width: 50%;
   height: 50%;
 }
-#techStackimg2{
+#techStackimg2 {
   width: 50%;
   height: 50%;
 }
-#techStackimg3{
+#techStackimg3 {
   width: 100px;
-  height: 100px ;
+  height: 100px;
 }
-#techStackimg{
+#techStackimg {
   /* margin-left: 10%; */
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 5%;
 }
 
@@ -458,7 +470,6 @@ home__.social-icons a.twitter:hover {
 .work {
   /* background-color: red; */
   background: linear-gradient(to bottom, #000031, #00002c);
-  
 }
 .work__container {
   row-gap: 2rem;
@@ -472,13 +483,12 @@ home__.social-icons a.twitter:hover {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  
 }
 
-#zee{
+#zee {
   height: 52%;
 }
-#ze{
+#ze {
   height: 52%;
 }
 
@@ -500,11 +510,10 @@ home__.social-icons a.twitter:hover {
   display: flex;
   flex-direction: column;
   border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    font-size: var(--normal-font-size);
-    
+  border-bottom-left-radius: 0.5rem;
+  font-size: var(--normal-font-size);
 }
-.work__img  .content .tag {
+.work__img .content .tag {
   display: inline-grid;
   flex-direction: row;
   justify-content: space-between;
@@ -513,9 +522,8 @@ home__.social-icons a.twitter:hover {
   padding-top: 0.5rem;
   padding-left: 1rem;
   background: #ffd900;
-  
 }
-.work__img  .content .tag h3 { 
+.work__img .content .tag h3 {
   font-size: 1rem;
 }
 .work__img .content .desc {
@@ -567,7 +575,7 @@ home__.social-icons a.twitter:hover {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
@@ -644,7 +652,7 @@ home__.social-icons a.twitter:hover {
     text-align: initial;
   }
   .skills__container {
-    grid-template-columns: .7fr;
+    grid-template-columns: 0.7fr;
     justify-content: center;
     column-gap: 1rem;
   }
@@ -654,7 +662,7 @@ home__.social-icons a.twitter:hover {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
- 
+
   .contact__form {
     width: 360px;
     padding-top: 2rem;
@@ -739,20 +747,19 @@ home__.social-icons a.twitter:hover {
   }
 }
 
-.calendar{
+.calendar {
   width: 90%;
-  background-color:#000031;
+  background-color: #000031;
 }
 
-.streak{
+.streak {
   margin-left: 25%;
   margin-top: -5%;
   margin-bottom: 5%;
   width: 50%;
-
 }
 
-#techStackLogo{
+#techStackLogo {
   display: flex;
 }
 
@@ -762,9 +769,9 @@ home__.social-icons a.twitter:hover {
   border: 2px solid teal;
 } */
 
-#workImg_myntra{
+#workImg_myntra {
   height: 52%;
 }
-#work_img_timely{
+#work_img_timely {
   height: 52%;
 }
